@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    user-select: none;
+}
+.container {
+    width: 100%;
+    min-width: 700px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+.vignette {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./img/vignette.png');
+}
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.time {
+    font-size: 7vw;
+    color: #fff;
+    font-weight: 200;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 0 100px #000;
+    font-family: -WEBKIT-PICTOGRAPH;
+    letter-spacing: 5px;
+}
+.search-bar {
+    display: block;
+    width: 500px;
+    height: 35px;
+    background-color: #fff;
+    margin: 2vh auto 0 auto;
+    box-shadow: 0px 0px 1px 1px #b9b9b9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.icon {    
+    float: left;
+    width: 35px;
+    height: 35px;
+    background-size: 80% 80%;
+    background-position: center;
+    background-image: url(./img/saan.png);
+    background-repeat: no-repeat;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+}
+#search {
+    width: calc(100% - 80px);
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    float: left;
+}
+.search-btn {    
+    float: right;
+    width: 34px;
+    height: 34px;
+}
+#searchBtn {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    background-size: 70% 70%;
+    background-position: center;
+    background-image: url(./img/search.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    outline: none;
+
+}
+
+.label-wrapper {
+    width: 85vw;
+    margin: 5vh auto 0 auto;
+    height: 60vh;
+    display: flex;
+    flex-flow: wrap;
+}
+.labl {
+    width: 10vw;
+    height: 20vh;
+    cursor: pointer;
+    margin: 1vw 2vh;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color,box-shadow .3s;
+}
+.labl > a {
+    display: block;
+    text-decoration: none;
+}
+.labl:hover > a .lpic {
+    box-shadow: 0px 0px 15px 2px #b7b4b4;
+    width: 7.5vw;
+    height: 7.5vw;
+}
+.labl:hover > a .lname {
+    background-color: rgba(255,255,255,.5);
+}
+.lpic {
+    width: 7vw;
+    height: 7vw;
+    display: block;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transition: all .3s;
+}
+.lname {
+    color: #fff;
+    border-radius: 5px;
+    width: 7vw;
+    margin: 1vh auto;
+    padding: 3px 15px;
+    font-size: initial;
+    text-shadow: 0 0 3px #222;
+    transition: all .3s;
+}
