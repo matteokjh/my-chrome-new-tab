@@ -1,11 +1,16 @@
 {
     "name": "sulpures",
-    "version": "1.0",
+    "version": "1.2",
     "description": "new tab!",
     "permissions": ["tabs"],
     "manifest_version": 2,
     "chrome_url_overrides": {
         "newtab": "new-tab.html"
+    },
+    "icons": {
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png",
+      "128": "128.png"
     }
-    
 }
