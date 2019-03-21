@@ -134,6 +134,18 @@ let labels = [ //标签数组
         url: './img/icon/youdao.png',
         name: '有道云笔记'
     },
+    {
+        id: 13,
+        link: 'https://www.zhihu.com/follow',
+        url: './img/icon/zhihu.png',
+        name: '知乎'
+    },
+    {
+        id: 14,
+        link: 'https://www.pixiv.net/',
+        url: './img/icon/p.png',
+        name: 'Pixiv'
+    },
 ];
 
 getImg();//刷新变背景
