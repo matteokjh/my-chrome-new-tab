@@ -1,8 +1,12 @@
 {
     "name": "sulpures",
-    "version": "1.3",
+    "version": "1.4",
     "description": "new tab!",
-    "permissions": ["tabs"],
+    "permissions": [
+        "tabs",
+        "webRequest",
+        "storage"
+    ],
     "manifest_version": 2,
     "chrome_url_overrides": {
         "newtab": "new-tab.html"
