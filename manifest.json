@@ -1,6 +1,6 @@
 {
     "name": "sulpures",
-    "version": "1.4",
+    "version": "1.4.1",
     "description": "new tab!",
     "permissions": [
         "tabs",
