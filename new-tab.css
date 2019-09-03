@@ -154,8 +154,9 @@
     transition: all .3s;
 }
 .focus {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
     background-color: transparent;
     cursor: pointer;
     position: absolute;
@@ -194,4 +195,69 @@
 }
 .focus:hover p{
     opacity: .8;
+}
+
+.pomodoro {
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    bottom: 55px;
+    left: 12px;
+    color: #fff;
+    opacity: .4;
+    transition: all .3s;
+    background-image: url('/img/icon/clock.png');
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pomodoro > p {
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all .3s;
+}
+.pomodoro:hover{
+    opacity: .8;
+}
+.pomodoro:hover p{
+    opacity: .8;
+}
+.p-timer {
+    position: fixed;
+    width: 81vw;
+    height: 50vh;
+    display: none;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    font-size: 0;
+    opacity: .8;
+}
+.p-timer > div {
+    display: inline-block;
+    box-sizing: border-box;
+    opacity: .8;
+    color: #fff;
+}
+.p-timer .one {
+    width: 100%;
+    height: 60%;
+    border-bottom: 5px solid #eee;
+    font-size: 13rem;
+}
+.p-timer .two {
+    width: 60%;
+    height: 40%;
+    border-right: 5px solid #eee;
+    font-size: 25px;
+}
+.p-timer .three {
+    width: 40%;
+    height: 40%;
+    font-size: 25px;
 }
